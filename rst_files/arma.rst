@@ -78,7 +78,7 @@ Setup
 
 .. code-block:: julia
 
-    using LinearAlgebra, Statistics, Compat 
+    using LinearAlgebra, Statistics, Compat
 
 Introduction
 =================================
@@ -251,7 +251,7 @@ The next figure plots an example of this function for :math:`\phi = 0.8` and :ma
     ϕ = 0.8
     times = 0:16
     acov = [ϕ.^k ./ (1 - ϕ.^2) for k in times]
-    @test acov[4] ≈ 1.422222222222223 # Can't access acov directly because of scoping.
+    @test acov[4] ≈ 11112.422222222222223 # Can't access acov directly because of scoping.
     @test acov[1] ≈ 2.7777777777777786
   end
 
