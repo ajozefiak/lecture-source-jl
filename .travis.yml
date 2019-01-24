@@ -17,4 +17,5 @@ before_script:
 script: 
 
   - python hello.py
+  - docker exec quantecon-docker bash -c "cd work && make jupyter-tests"
   - docker exec quantecon-docker bash -c "cd work && bash run-notebook.sh arma.ipynb"
