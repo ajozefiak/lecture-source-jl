@@ -9,7 +9,7 @@ services:
   - docker
 
 before_install:
-  - docker pull jozefiak/quantecon
+  - docker pull jozefiak/quantecon_user
 
 before_script:
   - docker run --rm --name quantecon-docker -it -d -v ${TRAVIS_BUILD_DIR}:/home/jovyan/work jozefiak/quantecon /bin/bash
