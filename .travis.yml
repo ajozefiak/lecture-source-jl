@@ -18,5 +18,5 @@ script:
 
   - docker exec quantecon-docker bash -c "ls" 
   - docker exec quantecon-docker bash -c "cd work && ls"
-  - docker exec quantecon-docker bash -c "cd work && make jupyter-tests"
+  - sudo docker exec quantecon-docker bash -c "cd work && make jupyter-tests"
   - docker exec quantecon-docker bash -c "cd work && bash run-notebook.sh arma.ipynb"
